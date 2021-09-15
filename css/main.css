@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+body {
+  background-image: url(../img/double-bubble-outline.png); }
+
+.textMedium {
+  font-size: 1.2em; }
+
+.textBig {
+  font-size: 2em; }
+
+.textSmall {
+  font-size: 0.8em; }
+
+
+nav {
+  background-color:#E4F5F4;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; }
+  nav img {
+    width: 100px; }
+  nav ul li {
+    display: inline; }
+    nav ul li a {
+      color: #80EECE;
+      text-decoration: none;
+      font-size: 1.3em; }
+
+.carousel-inner {
+  width: 1200px;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex; }
+
+section {
+  display: flex;
+  justify-content: space-between; }
+  section article {
+    width: 100%;
+    text-align: center;
+    padding: 20px; }
+    
+ div img{ 
+      width: 100%;
+      display: rigth;
+   }
+
+.arroz-añejo-icon {
+  background-image: url("/img/arroz-añejo.png"); }
+
+.arroz-nir-icon {
+  background-image: url("/img/arroz-nir.png"); }
+
+.arroz-integral-icon {
+  background-image: url("/img/arroz-integral.png"); }
+
+.historia-1 {
+  width: 2em; }
+
+.historia-2 {
+  width: 4em; }
+
+.historia-3 {
+  width: 6em; }
+.botom {
+  height: 60px;
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  display: inline-block;
+  text-decoration: none; }
+
+.boton--derecha {
+  position: absolute;
+  right: 20px;
+  bottom: -25px; }
+
+footer {
+  background-color: #D7A3ED;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; }
+  footer ul {
+    display: flex; }
+    footer ul li {
+      list-style: none; }
+
+.footer__title--dark {
+  color: #207CEE; }
+
+.footer__icons--sm img {
+  width: 40px;
+  margin-right: 20px; }
+
+@media only screen and (min-width: 768px){
+  body{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 8vh 80vh 6vh;
+    grid-template-areas: "nav nav nav " "main main aside" "footer footer footer";
+  }
+}
+@media only screen and(min-width: 1024px){
+  body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vh 100vh 20vh;
+    grid-template-areas: "nav nav nav nav" "main main . aside" "footer footer footer footer";
+  }
+
+}

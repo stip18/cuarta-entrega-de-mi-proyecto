@@ -1,0 +1,26 @@
+footer{
+	background-color: #D7A3ED;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+
+	ul{
+		display: flex;
+		li{
+			list-style: none;
+		}
+
+	}
+
+}
+
+
+.footer__title--dark{
+		color: #207CEE;
+}
+
+.footer__icons--sm img{
+	width: 40px;
+	margin-right: 20px;
+}
+
