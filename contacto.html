@@ -7,8 +7,9 @@
 
   
     <link rel="stylesheet" href="css/main.css">
-
-	<title>Informacion de cliente</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+	<title>Información de cliente</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,14 +37,14 @@
         </li>  
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
       </form>
     </div>
   </div>
 </nav>
 
-<section class="bg-light py-3">
+<section class="p-3 mb-2 bg-info text-white">
   <div class="container-fluid">
     <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -51,22 +52,32 @@
     <li class="breadcrumb-item active" aria-current="page">Contacto</li>
   </ol>
  </section>
-	<section>
+
+<section>
+  
 		<form action="envio.php" method="post" id="contacto">
+      
 			<fieldset>
-				<legend class="bg-danger text-white">Informacion personal</legend>
+				<legend class="p-3 mb-2 bg-success text-dark">Información personal</legend>
+        <div>
 			    <label for="Nombre">Nombre y Apellido</label>
+
 			    <input type="text" id="nombre" name="Nombre" required>
-			    <br>
+			    </div>
+          <br>
+          <div>
 			    <label for="email">Email</label>
 			    <input type="email" name="email" placeholder="sumail@gamil.com">
-			    <br>
+			    </div>
+          <br>
+          <div>
 			    <label for="edad">edad</label>
 			    <input type="number" placeholder="30" id="edad">
-			    
-            </fieldset>
+          </div>
+          <br>
+        </fieldset>
 
-            <fieldset>
+        <fieldset>
             	<legend>Tipo de arroz</legend>
             	<label for="">Añejo</label>
             	<input type="checkbox" name="AN" value="AN">
@@ -83,37 +94,46 @@
             		<option value="NIR">Nir</option>
             		<option value="IG">Integral</option>
            	</select>
-
             </fieldset>
-            <label for="dejanos tu mensaje">Dejanos tu mensaje</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+            <label for="">Déjanos tu mensaje</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Déjanos tu mensaje"></textarea>
             <br>
             <input type="reset" value="Cancelar">
             <input type="submit" value="Enviar">
+            
 		</form>
-	</section>
+</section>
+    
+   <div>
+    <h3 class="p-3 mb-2 bg-success text-dark">Ubicanos</h3>
+    <p>calle las gardenias 140-Chiclayo</p>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63390.432356187666!2d-79.88406008147966!3d-6.781777463291173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef232963dfff%3A0xa703e3454a7814bb!2sChiclayo!5e0!3m2!1ses-419!2spe!4v1626965159597!5m2!1ses-419!2spe" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+
 
 	<footer>
     <h3  class="footer__title--dark"></h3>
     <ul class="footer__icons--sm">
-    <li><a href="https://fa.me/<nombre>">
+    <li><a href="https://www.facebook.com/<stip.fachoflores>">
       <img src="img/facebook-icon.png" alt="">
       </a></li>
-    <li><a href="#">
+    <li><a href="https://www.twitter.com/<stip.fachoflores>">
       <img src="img/twitter-icon.png" alt="">
     </a></li>
-    <li><a href="#">
+    <li><a href="https://youtu.be/ftmlqMwlvV8">
       <img src="img/youtube-icon.png" alt="">
     </a></li>
-    <li><a href="#">
+    <li><a href="https://wa.me/<993885350>">
       <img src="img/whatsapp-logo.png" alt="">
     </a></li>
     </ul>
   </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
 	
 </body>
 </html>
